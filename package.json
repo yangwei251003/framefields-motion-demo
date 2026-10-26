@@ -1,0 +1,56 @@
+{
+  "name": "framefields-motion-demo",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.12.1",
+  "allowScripts": {
+    "skia-canvas": true,
+    "sharp": false,
+    "webgpu": false,
+    "onnxruntime-node": false,
+    "node-av": false,
+    "esbuild": false
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "skia-canvas"
+    ],
+    "ignoredBuiltDependencies": [
+      "sharp",
+      "webgpu",
+      "onnxruntime-node",
+      "node-av",
+      "esbuild"
+    ]
+  },
+  "trustedDependencies": [
+    "skia-canvas"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "frames": "node scripts/prepare-fonts.mjs && tsx src/render.ts frames",
+    "grid": "node scripts/prepare-fonts.mjs && tsx src/render.ts grid",
+    "preview": "node scripts/serve-preview.mjs",
+    "render": "node scripts/prepare-fonts.mjs && tsx src/render.ts",
+    "neon:assets": "tsx src/neon/assets.ts",
+    "neon:frames": "node scripts/prepare-fonts.mjs && tsx src/neon/render.ts frames",
+    "neon:grid": "node scripts/prepare-fonts.mjs && tsx src/neon/render.ts grid",
+    "neon:preview": "node scripts/serve-preview.mjs",
+    "neon:render": "node scripts/prepare-fonts.mjs && tsx src/neon/render.ts video",
+    "check": "node scripts/prepare-fonts.mjs && tsx src/render.ts check",
+    "score": "tsx src/score.ts",
+    "neon:check": "node scripts/prepare-fonts.mjs && tsx src/neon/render.ts check",
+    "neon:review": "node scripts/prepare-fonts.mjs && tsx src/neon/check-export.ts",
+    "sdk:preview": "node scripts/prepare-fonts.mjs && tsx src/render.ts preview",
+    "sdk:neon-preview": "node scripts/prepare-fonts.mjs && tsx src/neon/render.ts preview",
+    "build:pages": "node scripts/build-pages.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "dependencies": {
+    "framefields": "2.4.2"
+  }
+}

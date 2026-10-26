@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "video": {
+    "expectedFrames": 540,
+    "encodedFrames": 540,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "meanLuma": 0.1764231115744998,
+    "blackSegments": [],
+    "frozenSegments": []
+  },
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSec": 18,
+    "peakDbfs": -4.35852533559718,
+    "rmsDbfs": -16.715356719911554,
+    "integratedLufs": -15.384281520249102,
+    "clippedSamples": 0,
+    "silentSegments": []
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "low_contrast_text",
+      "message": "Text 'text-auto-1' (#1C2D46) on #111A2C has contrast 1.25:1 (aim for ≥ 3; #ffffff reads well).",
+      "layerId": "text-auto-1"
+    },
+    {
+      "severity": "info",
+      "code": "static_track",
+      "message": "'cube-0' animates `rotateX` but every keyframe holds 0.",
+      "layerId": "cube-0"
+    },
+    {
+      "severity": "info",
+      "code": "static_track",
+      "message": "'cube-0' animates `rotateY` but every keyframe holds 0.",
+      "layerId": "cube-0"
+    },
+    {
+      "severity": "info",
+      "code": "static_track",
+      "message": "'cube-7' animates `z` but every keyframe holds 0.",
+      "layerId": "cube-7"
+    },
+    {
+      "severity": "info",
+      "code": "static_track",
+      "message": "'cube-22' animates `z` but every keyframe holds 0.",
+      "layerId": "cube-22"
+    }
+  ]
+}

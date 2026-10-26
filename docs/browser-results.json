@@ -1,0 +1,62 @@
+[
+  {
+    "width": 1440,
+    "status": 200,
+    "checks": [
+      {
+        "clip": 0,
+        "metadata": {
+          "duration": 10.026667,
+          "width": 1280,
+          "height": 720,
+          "frames": 15
+        },
+        "play_pause_seek": true
+      },
+      {
+        "clip": 1,
+        "metadata": {
+          "duration": 18.026667,
+          "width": 1920,
+          "height": 1080,
+          "frames": 14
+        },
+        "play_pause_seek": true
+      }
+    ],
+    "page_errors": [],
+    "failed_resources": [],
+    "external_requests": [],
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "status": 200,
+    "checks": [
+      {
+        "clip": 0,
+        "metadata": {
+          "duration": 10.026667,
+          "width": 1280,
+          "height": 720,
+          "frames": 14
+        },
+        "play_pause_seek": true
+      },
+      {
+        "clip": 1,
+        "metadata": {
+          "duration": 18.026667,
+          "width": 1920,
+          "height": 1080,
+          "frames": 14
+        },
+        "play_pause_seek": true
+      }
+    ],
+    "page_errors": [],
+    "failed_resources": [],
+    "external_requests": [],
+    "overflow": false
+  }
+]

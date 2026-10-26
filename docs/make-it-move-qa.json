@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "video": {
+    "expectedFrames": 300,
+    "encodedFrames": 300,
+    "fps": 30,
+    "width": 1280,
+    "height": 720,
+    "meanLuma": 0.4708794316038821,
+    "blackSegments": [],
+    "frozenSegments": []
+  },
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "durationSec": 10,
+    "peakDbfs": -6.405326628114388,
+    "rmsDbfs": -26.356806158937147,
+    "integratedLufs": -24.890962491725222,
+    "clippedSamples": 0,
+    "silentSegments": []
+  },
+  "issues": []
+}
